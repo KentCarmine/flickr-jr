@@ -1,0 +1,6 @@
+<div class="container">
+  <h1><%=@user_to_view.name%>'s Albums</h1>
+  <%@user_to_view.albums.each do |album|%>
+    <p><a href="/albums/<%=album.id%>"><%=album.name%></a></p>
+  <%end%>
+</div>

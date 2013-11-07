@@ -1,0 +1,6 @@
+<h1><%=@album.name%></h1>
+<%@photos.each do |photo|%>
+  <a href="/photos/<%=photo.id%>"><img src="/images/<%=photo.path%>"></a>
+  <br>
+<%end%>
+

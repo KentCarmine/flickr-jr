@@ -118,6 +118,11 @@ namespace :db do
   end
 end
 
+ desc "Drop, create, migrate and seed the database"
+  task :fixit => [:drop, :create, :migrate] do
+    puts "Reset complete!"
+  end
+
 desc 'Start IRB with application environment loaded'
 task "console" do
   exec "irb -r./config/environment"

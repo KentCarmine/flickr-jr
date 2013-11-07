@@ -39,5 +39,5 @@ require APP_ROOT.join('config', 'database')
 Dir[APP_ROOT.join('app', 'uploaders', '*.rb')].each { |file| require file }
 
 CarrierWave.configure do |config|
-    config.root = APP_ROOT + 'public/'
+    config.root = APP_ROOT + 'public/images/'
 end
